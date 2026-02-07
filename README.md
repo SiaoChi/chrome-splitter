@@ -49,6 +49,20 @@ open dist/ChromeSplitter.app
 
 This creates `dist/ChromeSplitter.app` as a menu bar app.
 
+### Option 4: Install from `.zip` (double-click and use)
+
+If you received `ChromeSplitter-mac.zip`, you can install and run directly:
+
+```bash
+cd ~/Downloads
+unzip -o ChromeSplitter-mac.zip
+mv -f ChromeSplitter.app /Applications/
+xattr -dr com.apple.quarantine /Applications/ChromeSplitter.app
+open /Applications/ChromeSplitter.app
+```
+
+If macOS shows a security prompt, you can also right-click `ChromeSplitter.app` and choose `Open` once.
+
 ## Permission
 
 This app uses macOS Accessibility APIs to resize/move windows.
@@ -57,7 +71,7 @@ Path:
 
 `System Settings -> Privacy & Security -> Accessibility`
 
-Enable permission for the running app (Xcode or Terminal).
+Enable permission for the running app (`ChromeSplitter.app`, Xcode, or Terminal).
 
 ## Scope Notes
 
